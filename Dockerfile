@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD [ "gunicorn", "-b0.0.0.0:5000", "--env", "FLASK_ENV=development", "make feed-load"]
+CMD [ "gunicorn", "-b0.0.0.0:5000", "--env", "FLASK_ENV=production"]
